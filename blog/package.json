@@ -16,17 +16,17 @@
     "typecheck": "astro check"
   },
   "dependencies": {
-    "@astrojs/node": "catalog:",
-    "@astrojs/react": "catalog:",
-    "@emdash-cms/plugin-audit-log": "workspace:*",
-    "astro": "catalog:",
-    "better-sqlite3": "catalog:",
-    "emdash": "workspace:*",
-    "react": "catalog:",
-    "react-dom": "catalog:"
+    "@astrojs/node": "^10.0.0",
+    "@astrojs/react": "^5.0.0",
+    "@emdash-cms/plugin-audit-log": "^0.0.1",
+    "astro": "^6.1.2",
+    "better-sqlite3": "^11.10.0",
+    "emdash": "^0.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@astrojs/check": "catalog:"
+    "@astrojs/check": "^0.9.7"
   },
   "peerDependencies": {},
   "optionalDependencies": {}
