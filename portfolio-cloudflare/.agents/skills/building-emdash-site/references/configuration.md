@@ -172,7 +172,7 @@ Key dependencies for a Node.js site:
 {
 	"dependencies": {
 		"astro": "^6.0.0",
-		"emdash": "^0.0.1",
+		"emdash": "^0.0.2",
 		"@astrojs/node": "^9.0.0",
 		"@astrojs/react": "^4.0.0",
 		"react": "^18.0.0",
