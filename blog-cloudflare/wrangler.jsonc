@@ -1,6 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "my-emdash-site",
+	"main": "./src/worker.ts",
 	"compatibility_date": "2026-04-01",
 	"compatibility_flags": [
 		"nodejs_compat"
@@ -19,6 +20,11 @@
 		{
 			"binding": "MEDIA",
 			"bucket_name": "my-emdash-media",
+		},
+	],
+	"worker_loaders": [
+		{
+			"binding": "LOADER",
 		},
 	],
 }
