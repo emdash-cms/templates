@@ -1,9 +1,13 @@
 ---
-import { getEmDashCollection, getEntryTerms } from "emdash";
+import { getEmDashCollection, getEntryTerms, getSiteSettings } from "emdash";
 import { Image } from "emdash/ui";
 import Base from "../layouts/Base.astro";
 import PostCard from "../components/PostCard.astro";
 import { getReadingTime } from "../utils/reading-time";
+
+const settings = await getSiteSettings();
+const siteTitle = settings.title ?? "My Blog";
+const siteTagline = settings.tagline ?? "";
 
 const { entries: posts, cacheHint } = await getEmDashCollection("posts");
 
@@ -58,7 +62,7 @@ function formatDate(date: Date | null | undefined) {
 }
 ---
 
-<Base title="My Blog" description="Welcome to my blog">
+<Base title={siteTitle} description={siteTagline}>
 	{
 		posts.length === 0 ? (
 			<section class="empty-state">

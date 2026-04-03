@@ -1,10 +1,10 @@
 import type { APIRoute } from "astro";
-import { getEmDashCollection } from "emdash";
-
-const siteTitle = "My Blog";
-const siteDescription = "A blog about software, design, and the occasional stray thought.";
+import { getEmDashCollection, getSiteSettings } from "emdash";
 
 export const GET: APIRoute = async ({ site, url }) => {
+	const settings = await getSiteSettings();
+	const siteTitle = settings.title ?? "My Blog";
+	const siteDescription = settings.tagline ?? "";
 	const siteUrl = site?.toString() || url.origin;
 
 	const { entries: posts } = await getEmDashCollection("posts", {
