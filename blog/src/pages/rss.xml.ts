@@ -3,8 +3,8 @@ import { getEmDashCollection, getSiteSettings } from "emdash";
 
 export const GET: APIRoute = async ({ site, url }) => {
 	const settings = await getSiteSettings();
-	const siteTitle = settings.title ?? "My Blog";
-	const siteDescription = settings.tagline ?? "";
+	const siteTitle = settings?.title || "My Blog";
+	const siteDescription = settings?.tagline || "";
 	const siteUrl = site?.toString() || url.origin;
 
 	const { entries: posts } = await getEmDashCollection("posts", {

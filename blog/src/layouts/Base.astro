@@ -37,8 +37,8 @@ const {
 	content,
 } = Astro.props;
 const settings = await getSiteSettings();
-const siteTitle = settings.title ?? "My Blog";
-const siteTagline = settings.tagline ?? "";
+const siteTitle = settings?.title || "My Blog";
+const siteTagline = settings?.tagline || "";
 // If title already includes site title (from getSeoMeta), use as-is
 const fullTitle = title.includes(siteTitle) ? title : `${title} — ${siteTitle}`;
 

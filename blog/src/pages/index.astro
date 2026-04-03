@@ -6,8 +6,8 @@ import PostCard from "../components/PostCard.astro";
 import { getReadingTime } from "../utils/reading-time";
 
 const settings = await getSiteSettings();
-const siteTitle = settings.title ?? "My Blog";
-const siteTagline = settings.tagline ?? "";
+const siteTitle = settings?.title || "My Blog";
+const siteTagline = settings?.tagline || "";
 
 const { entries: posts, cacheHint } = await getEmDashCollection("posts");
 
