@@ -1,1 +1,1 @@
-AGENTS.md
+/home/runner/work/emdash/emdash/templates/starter-cloudflare/AGENTS.md

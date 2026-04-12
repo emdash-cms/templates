@@ -1,1 +1,1 @@
-AGENTS.md
+/home/runner/work/emdash/emdash/templates/marketing/AGENTS.md
