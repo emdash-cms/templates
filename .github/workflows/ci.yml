@@ -45,3 +45,27 @@ jobs:
       - name: Build
         working-directory: ${{ matrix.template }}
         run: pnpm build
+
+      - name: Smoke test admin
+        if: ${{ !contains(matrix.template, 'cloudflare') }}
+        working-directory: ${{ matrix.template }}
+        run: |
+          npx astro dev --port 4321 &
+          SERVER_PID=$!
+          trap "kill $SERVER_PID 2>/dev/null" EXIT
+
+          # Wait for dev server
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:4321/ -o /dev/null 2>/dev/null && break
+            sleep 1
+          done
+
+          # Run migrations + create session
+          curl -sf -c /tmp/cookies.txt \
+            http://localhost:4321/_emdash/api/setup/dev-bypass \
+            -o /dev/null
+
+          # Verify admin page renders without SSR errors
+          curl -sf -b /tmp/cookies.txt \
+            http://localhost:4321/_emdash/admin \
+            -o /dev/null
