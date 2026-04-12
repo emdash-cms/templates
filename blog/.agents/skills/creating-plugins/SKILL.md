@@ -261,17 +261,17 @@ The `"."` export has the descriptor. The `"./sandbox"` export has the implementa
 
 Each feature is optional. Add only what your plugin needs:
 
-| Feature             | Where                        | Standard | Native | Purpose                                                 |
-| ------------------- | ---------------------------- | -------- | ------ | ------------------------------------------------------- |
-| **Hooks**           | `definePlugin({ hooks })`    | Yes      | Yes    | React to content/media/lifecycle events                 |
-| **Storage**         | descriptor `storage`         | Yes      | Yes    | Document collections with indexed queries               |
-| **KV**              | `ctx.kv` in hooks/routes     | Yes      | Yes    | Key-value store for internal state                      |
+| Feature             | Where                        | Standard | Native | Purpose                                               |
+| ------------------- | ---------------------------- | -------- | ------ | ----------------------------------------------------- |
+| **Hooks**           | `definePlugin({ hooks })`    | Yes      | Yes    | React to content/media/lifecycle events               |
+| **Storage**         | descriptor `storage`         | Yes      | Yes    | Document collections with indexed queries             |
+| **KV**              | `ctx.kv` in hooks/routes     | Yes      | Yes    | Key-value store for internal state                    |
 | **API Routes**      | `definePlugin({ routes })`   | Yes      | Yes    | REST endpoints at `/_emdash/api/plugins/<id>/<route>` |
-| **Admin Pages**     | Block Kit `admin` route      | Yes      | Yes    | Admin pages via Block Kit (JSON blocks)                 |
-| **Widgets**         | Block Kit `admin` route      | Yes      | Yes    | Dashboard cards via Block Kit                           |
-| **React Admin**     | `admin.entry` + React export | No       | Yes    | React-based admin pages and widgets (native only)       |
-| **PT Blocks**       | `admin.portableTextBlocks`   | No       | Yes    | Custom block types in the Portable Text editor          |
-| **Site Components** | `componentsEntry`            | No       | Yes    | Astro components for rendering blocks on the site       |
+| **Admin Pages**     | Block Kit `admin` route      | Yes      | Yes    | Admin pages via Block Kit (JSON blocks)               |
+| **Widgets**         | Block Kit `admin` route      | Yes      | Yes    | Dashboard cards via Block Kit                         |
+| **React Admin**     | `admin.entry` + React export | No       | Yes    | React-based admin pages and widgets (native only)     |
+| **PT Blocks**       | `admin.portableTextBlocks`   | No       | Yes    | Custom block types in the Portable Text editor        |
+| **Site Components** | `componentsEntry`            | No       | Yes    | Astro components for rendering blocks on the site     |
 
 See the reference files for detailed syntax:
 

@@ -1,27 +1,29 @@
 {
 	"name": "@emdash-cms/template-starter-cloudflare",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"deploy": "wrangler deploy",
-		"typecheck": "astro check" 
+		"deploy": "astro build && wrangler deploy",
+		"typecheck": "astro check",
+		"bootstrap": "emdash init && emdash seed",
+		"seed": "emdash seed"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^13.1.6",
+		"@astrojs/cloudflare": "^13.1.7",
 		"@astrojs/react": "^5.0.0",
-    "@emdash-cms/cloudflare": "^0.1.0",
-		"astro": "^6.1.2",
-    "emdash": "^0.1.0",
-		"react": "^19.2.4",
-		"react-dom": "^19.2.4"
+		"@emdash-cms/cloudflare": "^0.2.0",
+		"astro": "^6.0.1",
+		"emdash": "^0.2.0",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.7",
-		"@cloudflare/workers-types": "^4.20260401.1",
-		"wrangler": "^4.79.0"
+		"@cloudflare/workers-types": "^4.20260305.1",
+		"wrangler": "^4.80.0"
 	}
 }

@@ -66,8 +66,8 @@ definePlugin({
 
 ## Route URLs
 
-| Plugin ID | Route Name      | URL                                        |
-| --------- | --------------- | ------------------------------------------ |
+| Plugin ID | Route Name      | URL                                      |
+| --------- | --------------- | ---------------------------------------- |
 | `forms`   | `status`        | `/_emdash/api/plugins/forms/status`      |
 | `forms`   | `submissions`   | `/_emdash/api/plugins/forms/submissions` |
 | `seo`     | `settings/save` | `/_emdash/api/plugins/seo/settings/save` |
