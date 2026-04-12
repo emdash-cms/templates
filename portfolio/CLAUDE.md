@@ -1,1 +1,1 @@
-/home/runner/work/emdash/emdash/templates/portfolio/AGENTS.md
+AGENTS.md

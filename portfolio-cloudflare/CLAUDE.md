@@ -1,1 +1,1 @@
-/home/runner/work/emdash/emdash/templates/portfolio-cloudflare/AGENTS.md
+AGENTS.md

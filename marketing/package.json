@@ -20,11 +20,17 @@
 		"@astrojs/react": "^5.0.0",
 		"astro": "^6.0.1",
 		"better-sqlite3": "^12.8.0",
-		"emdash": "^0.2.0",
+		"emdash": "^0.3.0",
 		"react": "19.2.4",
 		"react-dom": "19.2.4"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.7"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"better-sqlite3",
+			"esbuild"
+		]
 	}
 }
