@@ -33,8 +33,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
-          cache-dependency-path: ${{ matrix.template }}/pnpm-lock.yaml
 
       - name: Install
         working-directory: ${{ matrix.template }}
