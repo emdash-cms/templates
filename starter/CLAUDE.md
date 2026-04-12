@@ -1,1 +1,1 @@
-/home/runner/work/emdash/emdash/templates/starter/AGENTS.md
+AGENTS.md
