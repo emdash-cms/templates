@@ -1,5 +1,7 @@
 # EmDash Templates
 
+> **This repo is auto-synced from [emdash-cms/emdash](https://github.com/emdash-cms/emdash).** Please open issues and PRs on the main repo, not here. PRs from external contributors will be closed automatically.
+
 Starter templates for [EmDash](https://github.com/emdash-cms/emdash), a full-stack TypeScript CMS built on Astro. Each template ships with seed data so you can see a working site immediately.
 
 ## Quick Start
