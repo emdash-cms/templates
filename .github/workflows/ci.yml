@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke-test:
+    name: ${{ matrix.template }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        template:
+          - blank
+          - blog
+          - blog-cloudflare
+          - marketing
+          - marketing-cloudflare
+          - portfolio
+          - portfolio-cloudflare
+          - starter
+          - starter-cloudflare
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: ${{ matrix.template }}/pnpm-lock.yaml
+
+      - name: Install
+        working-directory: ${{ matrix.template }}
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Typecheck
+        working-directory: ${{ matrix.template }}
+        run: pnpm typecheck
+
+      - name: Build
+        working-directory: ${{ matrix.template }}
+        run: pnpm build
