@@ -6,7 +6,10 @@ on:
 
 jobs:
   close:
-    if: github.actor != 'emdashbot[bot]'
+    if: >-
+      github.actor != 'emdashbot[bot]' &&
+      github.event.pull_request.author_association != 'OWNER' &&
+      github.event.pull_request.author_association != 'MEMBER'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
