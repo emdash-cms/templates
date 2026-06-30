@@ -20,7 +20,7 @@
     "astro": "^7.0.0",
     "astro-iconset": "^0.0.4",
     "better-sqlite3": "^12.8.0",
-    "emdash": "^0.23.0",
+    "emdash": "^0.24.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
