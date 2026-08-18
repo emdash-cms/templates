@@ -18,7 +18,7 @@
     "@astrojs/react": "^6.0.0",
     "astro": "^7.0.0",
     "better-sqlite3": "^12.8.0",
-    "emdash": "^0.30.0",
+    "emdash": "^0.34.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
