@@ -14,15 +14,15 @@
     "typecheck": "astro check"
   },
   "dependencies": {
-    "@astrojs/node": "^11.0.0",
-    "@astrojs/react": "^6.0.0",
-    "astro": "^7.0.0",
-    "emdash": "^0.37.0",
+    "@astrojs/node": "^11.1.5",
+    "@astrojs/react": "^6.0.5",
+    "astro": "^7.3.2",
+    "emdash": "^0.38.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.7"
+    "@astrojs/check": "^0.9.10"
   },
   "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
 }
