@@ -16,9 +16,8 @@
   "dependencies": {
     "@astrojs/node": "^11.1.5",
     "@astrojs/react": "^6.0.5",
-    "@emdash-cms/plugin-audit-log": "^0.2.2",
     "astro": "^7.3.2",
-    "emdash": "^0.39.1",
+    "emdash": "^0.40.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
