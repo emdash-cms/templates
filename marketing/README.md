@@ -11,7 +11,7 @@ A conversion-focused landing page template built with [EmDash](https://github.co
 - Testimonials
 - Pricing cards
 - FAQ accordion
-- Contact form with validation
+- Contact page with direct email links
 - SEO metadata and JSON-LD
 - Dark/light mode
 
@@ -42,11 +42,10 @@ A conversion-focused landing page template built with [EmDash](https://github.co
 
 ```bash
 pnpm install
-pnpm bootstrap
 pnpm dev
 ```
 
-Open http://localhost:4321 for the site and http://localhost:4321/_emdash/admin for the CMS.
+Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the marketing seed during setup. The site is available at http://localhost:4321.
 
 ## Want Cloudflare Instead?
 
@@ -57,4 +56,4 @@ See the [Cloudflare variant](../marketing-cloudflare) for a version that deploys
 ## See Also
 
 - [All templates](../)
-- [EmDash documentation](https://github.com/emdash-cms/emdash/tree/main/docs)
+- [EmDash documentation](https://docs.emdashcms.com/)

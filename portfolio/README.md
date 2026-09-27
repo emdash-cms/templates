@@ -44,11 +44,10 @@ A visual portfolio for showcasing creative work, built with [EmDash](https://git
 
 ```bash
 pnpm install
-pnpm bootstrap
 pnpm dev
 ```
 
-Open http://localhost:4321 for the site and http://localhost:4321/_emdash/admin for the CMS.
+Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the portfolio seed during setup. The site is available at http://localhost:4321.
 
 ## Want Cloudflare Instead?
 
@@ -59,4 +58,4 @@ See the [Cloudflare variant](../portfolio-cloudflare) for a version that deploys
 ## See Also
 
 - [All templates](../)
-- [EmDash documentation](https://github.com/emdash-cms/emdash/tree/main/docs)
+- [EmDash documentation](https://docs.emdashcms.com/)
