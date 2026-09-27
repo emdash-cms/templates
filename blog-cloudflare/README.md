@@ -15,7 +15,6 @@ A clean, minimal blog built with [EmDash](https://github.com/emdash-cms/emdash) 
 - RSS feed
 - SEO metadata and JSON-LD
 - Dark/light mode
-- Forms plugin and webhook notifier
 
 ## Pages
 
@@ -48,20 +47,22 @@ A clean, minimal blog built with [EmDash](https://github.com/emdash-cms/emdash) 
 
 ```bash
 pnpm install
-pnpm bootstrap
 pnpm dev
 ```
+
+Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the blog seed during setup. The site is available at http://localhost:4321.
 
 ## Deploying
 
 ```bash
+pnpm wrangler login
 pnpm deploy
 ```
 
-Or click the deploy button above to set up the project in your Cloudflare account.
+The first deployment provisions the named D1 database and R2 bucket from `wrangler.jsonc`. See [Deploy to Cloudflare](https://docs.emdashcms.com/deployment/cloudflare/) for production setup, or use the deploy button above.
 
 ## See Also
 
 - [Node.js variant](../blog) -- same template using SQLite and local file storage
 - [All templates](../)
-- [EmDash documentation](https://github.com/emdash-cms/emdash/tree/main/docs)
+- [EmDash documentation](https://docs.emdashcms.com/)

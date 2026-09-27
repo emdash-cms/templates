@@ -79,16 +79,13 @@ cd my-site
 # Install dependencies
 pnpm install
 
-# Initialise the database and seed demo content
-pnpm bootstrap
-
 # Start the dev server
 pnpm dev
 ```
 
-Open http://localhost:4321 to see your site and http://localhost:4321/_emdash/admin for the CMS.
+Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the template's seed during setup.
 
 ## Learn More
 
-- [EmDash documentation](https://github.com/emdash-cms/emdash/tree/main/docs)
+- [EmDash documentation](https://docs.emdashcms.com/)
 - [EmDash repository](https://github.com/emdash-cms/emdash)
