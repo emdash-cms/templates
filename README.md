@@ -58,17 +58,9 @@ A general-purpose starting point with posts, pages, categories, and tags. Less o
 
 [Cloudflare variant](./starter-cloudflare) | [Node.js variant](./starter)
 
----
-
-### Blank
-
-The most minimal template. A single index page with EmDash wired up and nothing else. Start here if you want full control from the beginning.
-
-[View template](./blank)
-
 ## Variants
 
-Each template (except blank) comes in two variants:
+Each template comes in two variants:
 
 | Variant | Database | Storage | Adapter |
 |---|---|---|---|
